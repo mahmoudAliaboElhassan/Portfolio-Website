@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0
+}
+
+body {
+    color: #f0f0f0
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth
+}
+
+@media (max-width:28.75em) {
+    html {
+        font-size: 55%
+    }
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: #be3144
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    line-height: 70px;
+    margin-right: 15px
+}
+
+a {
+    text-decoration: none;
+    color: #f0f0f0
+}
+
+nav ul li a {
+    font-size: 25px;
+    padding: 1.5rem;
+    font-weight: 700
+}
+
+nav ul li:hover {
+    background-color: #45567d
+}
+
+.welcome-section {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 73px);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #2b2c2e
+}
+
+h1 {
+    font-size: 50px
+}
+
+.welcome-section p {
+    color: #8a2d2f;
+    font-size: 33px
+}
+
+#projects {
+    background-color: #45567d
+}
+
+#projects h1 {
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    padding: 70px 0 40px 0
+}
+
+.project-image {
+    height: calc(100% - 6.8rem);
+    transition: .5s;
+    width: 100%
+}
+
+.projects-grid a {
+    background-color: #303841;
+    position: relative
+}
+
+.project-image:hover {
+    transform: scale(1.1)
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem
+}
+
+.project-tile {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    font-size: 23px;
+    display: flex
+}
+
+@media (max-width:28.75em) {
+    .nav {
+        justify-content: center
+    }
+}
+
+@media (max-width:924px) {
+    .project-tile {
+        font-size: 25px
+    }
+}
+
+@media (max-width:924px) {
+    h1 {
+        font-size: 37px
+    }
+}
+
+@media (max-width:924px) {
+    nav ul {
+        justify-content: center
+    }
+}
