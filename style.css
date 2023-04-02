@@ -150,6 +150,7 @@ h1 {
     bottom: 20px;
     font-size: 23px;
     display: flex;
+    white-space: nowrap;
 }
 
 @media (max-width: 28.75em) {
