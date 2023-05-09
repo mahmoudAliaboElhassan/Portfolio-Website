@@ -1,32 +1,61 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,500;0,700;1,300;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Roboto:wght@400;500;700&display=swap");
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --mainColor: #be3144;
+    --namecolor: #040101;
 }
 
 body {
     color: #f0f0f0;
+    font-size: 16px;
 }
 
 html {
-    box-sizing: border-box;
-    font-size: 62.5%;
+    font-size: 10px;
     scroll-behavior: smooth;
 }
 
-@media (max-width: 28.75em) {
-    html {
-        font-size: 55%;
-    }
-}
-
-#navbar {
+#navbar .container {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 9999;
-    background-color: #be3144;
+    background-color: var(--mainColor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: auto;
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
 }
 
 nav ul {
@@ -35,7 +64,6 @@ nav ul {
     justify-content: end;
     align-items: center;
     line-height: 70px;
-    margin-right: 15px;
 }
 
 a {
@@ -43,10 +71,17 @@ a {
     color: #f0f0f0;
 }
 
-nav ul li a {
+nav ul li a,
+.logo {
     font-size: 25px;
     padding: 1.5rem;
+    font-weight: 500;
+}
+
+.logo {
     font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 30px;
 }
 
 nav ul li:hover {
@@ -68,9 +103,141 @@ h1 {
     font-size: 50px;
 }
 
-.welcome-section p {
-    color: #8a2d2f;
-    font-size: 33px;
+.welcome-section .text-animate {
+    position: relative;
+}
+
+.welcome-section .text-animate p {
+    color: transparent;
+    font-size: 3.5rem;
+    -webkit-text-stroke: 1px var(--mainColor);
+    letter-spacing: 1px;
+}
+
+.skills {
+    background-color: #303841;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.skills,
+.skills-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills-box {
+    width: 550px;
+    padding: 20px;
+    max-width: 100%;
+}
+
+.skills .container .headings {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 3rem;
+}
+
+.skills .container .headings span {
+    color: var(--mainColor);
+}
+
+.skills-columns .title {
+    font-size: 2.5rem;
+    margin-left: 3rem;
+}
+
+@media (max-width: 768px) {
+    .skills-columns .title {
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+.skills-box .skills-content {
+    position: relative;
+    border: 3px solid var(--mainColor);
+    border-radius: 0.6rem;
+    padding: 0.5rem 3rem;
+}
+
+.skills-content .progress {
+    padding: 1rem;
+}
+
+.skills-content .progress h3 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+.skills-content .progress .bar {
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--mainColor);
+    margin: 1rem 0 0 0;
+    position: relative;
+    padding: 5px;
+}
+
+.skills-content .progress .bar::before {
+    content: "";
+    position: absolute;
+    height: calc(100% - 4px);
+    border-radius: 0.6rem;
+    left: 0.5%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--mainColor);
+}
+
+.skills-columns:nth-child(1) .skills-content .progress:nth-child(1) .bar::before {
+    width: 90%;
+}
+
+.skills-columns:nth-child(1) .skills-content .progress:nth-child(2) .bar::before {
+    width: 85%;
+}
+
+.skills-columns:nth-child(1) .skills-content .progress:nth-child(3) .bar::before {
+    width: 80%;
+}
+
+.skills-columns:nth-child(1) .skills-content .progress:nth-child(4) .bar::before {
+    width: 85%;
+}
+
+.skills-columns:nth-child(1) .skills-content .progress:nth-child(5) .bar::before {
+    width: 90%;
+}
+
+.skills-columns:nth-child(1) .skills-content .progress:nth-child(6) .bar::before {
+    width: 90%;
+}
+
+.skills-columns:nth-child(2) .skills-content .progress:nth-child(1) .bar::before {
+    width: 95%;
+}
+
+.skills-columns:nth-child(2) .skills-content .progress:nth-child(2) .bar::before {
+    width: 95%;
+}
+
+.skills-columns:nth-child(2) .skills-content .progress:nth-child(3) .bar::before {
+    width: 95%;
+}
+
+.skills-columns:nth-child(2) .skills-content .progress:nth-child(4) .bar::before {
+    width: 95%;
+}
+
+.skills-columns:nth-child(2) .skills-content .progress:nth-child(5) .bar::before {
+    width: 95%;
+}
+
+.skills-columns:nth-child(2) .skills-content .progress:nth-child(6) .bar::before {
+    width: 95%;
 }
 
 #projects {
@@ -105,12 +272,11 @@ h1 {
 .project {
     background-color: #303841;
     position: relative;
-    transition: 0.5s;
+    transition: 0.7s;
 }
 
 .cod {
     color: #303841;
-    transition: 0.5s;
     transition: 0.5s;
 }
 
@@ -126,7 +292,9 @@ h1 {
 }
 
 .myproject:hover .project {
-    transform: scale(1.1);
+    transform: scale(1.2) rotate(2deg);
+    transform-origin: center center;
+    opacity: 0.4;
 }
 
 .myproject:hover .cod {
@@ -137,9 +305,7 @@ h1 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 4rem;
-    width: 90%;
     max-width: 1280px;
-    margin: 40px auto;
     margin-bottom: 6rem;
 }
 
@@ -266,7 +432,7 @@ h1 {
 }
 
 .name {
-    color: black;
+    color: var(--namecolor);
     font-weight: 700;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
