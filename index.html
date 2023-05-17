@@ -2,13 +2,13 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
-    <link rel="icon" type="image.jpg" href="photo_2022-06-30_23-48-55 (2).jpg" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This Is Mahmoud Ali's Portfolio">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="icon" type="image/png" href="Mahmoud-Ali.jpg">
     <title>Mahmoud Ali</title>
 </head>
 
@@ -16,24 +16,28 @@
     <nav id="navbar">
         <div class="container">
             <a href="#" class="logo">Mahmoud.</a>
+            <i class="fa-solid fa-bars fa-xl" id="menu-icon"></i>
             <ul class="nav-list">
                 <li>
-                    <a href="">Home</a>
+                    <a href="#welcome-section" class="active">Home</a>
                 </li>
                 <li>
                     <a href="#skills">Skills</a>
                 </li>
                 <li>
+                    <a href="#education">Education</a>
+                </li>
+                <li>
                     <a href="#projects">Work</a>
                 </li>
                 <li>
-                    <a href="#profile-link">Contact</a>
+                    <a href="#contacts">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <section class="welcome-section" id="wecome-section">
+    <section class="welcome-section" id="welcome-section">
         <h1>Hey I am Mahmoud Ali</h1>
         <div class="text-animate">
             <p data-text="FrontEnd Developer">FrontEnd Developer</p>
@@ -42,72 +46,52 @@
     <section class="skills" id="skills">
         <div class="container">
             <h2 class="headings">My <span>Skills</span></h2>
-            <div class="skills-row">
-                <div class="skills-columns">
-                    <h3 class="title">Coding Skills</h3>
-                    <div class="skills-box">
-                        <div class="skills-content">
-                            <div class="progress">
-                                <h3>HTML <span>90%</span></h3>
-
-                                <div class="bar"><span></span></div>
-                            </div>
-                            <div class="progress">
-                                <h3>CSS<span>85%</span></h3>
-                                <div class="bar"><span></span></div>
-                            </div>
-                            <div class="progress">
-                                <h3>JavaScript (ES6/API/JSON) <span>80%</span></h3>
-                                <div class="bar"><span></span></div>
-                            </div>
-                            <div class="progress">
-                                <h3>SASS / SCSS <span>85%</span></h3>
-                                <div class="bar"><span></span></div>
-                            </div>
-                            <div class="progress">
-                                <h3>Bootstrap <span>90%</span></h3>
-                                <div class="bar"><span></span></div>
-                            </div>
-                            <div class="progress">
-                                <h3>React (Material UI/Redux/Next JS)<span>90%</span></h3>
-                                <div class="bar"><span></span></div>
-                            </div>
+            <div class="skills-columns">
+                <h3 class="title">Coding Skills</h3>
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3>HTML <span>90%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>CSS<span>85%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>JavaScript (ES6/API/JSON) <span>80%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>SASS / SCSS <span>85%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>Bootstrap <span>90%</span></h3>
+                            <div class="bar"><span></span></div>
                         </div>
                     </div>
                 </div>
-                <div class="skills-columns">
-                    <h3 class="title">Professional Skills</h3>
-                    <div class="skills-box">
-                        <div class="skills-content">
-                            <div class="progress">
-                                <h3>JavaScript Unit Testing(Jest)<span>95%</span></h3>
-                                <div class="bar"><span></span></div>
-                            </div>
-                            <div class="progress">
-                                <h3>Pugjs<span>90%</span></h3>
-                                <div class="bar"><span></span></div>
-                            </div>
-                            <div class="progress">
-                                <h3>Package Manager (NPM) <span>80%</span></h3>
-                                <div class="bar"><span></span></div>
-                            </div>
-                            <div class="progress">
-                                <h3>Version Control (Git/GitHub) <span>85%</span></h3>
-                                <div class="bar"><span></span></div>
-                            </div>
-                            <div class="progress">
-                                <h3>Task Runner (Gulpjs) <span>90%</span></h3>
-                                <div class="bar"><span></span></div>
-                            </div>
-                            <div class="progress">
-                                <h3>
-                                    Basics(OOP/Data Structure/Algorithms) <span>90%</span>
-                                </h3>
-                                <div class="bar"><span></span></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            </div>
+        </div>
+    </section>
+    <section id="education" class="education">
+        <div class="container">
+            <div class="bulltes">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <h2 class="headings">My Education <span>Journery</span></h2>
+            <div class="education-box">
+                <div class="year">2021 - 2025</div>
+                <h3>
+                    BACHELOR DEGREE : <span> Computer and Information Science</span>
+                </h3>
+                <div class="university">Assiut University</div>
+                <p>I have a degree in Computer and Information Science and have been exposed to the fundamentals of programming during my studies. As a graduate of this field, I likely have a broad understanding of various aspects of computer science, including
+                    algorithms, data structures, software development, databases, and computer networks. While my education have provided me a strong foundation in programming, there is always room to continue learning and honing My skills in this dynamic
+                    and rapidly evolving field.</p>
             </div>
         </div>
     </section>
@@ -117,7 +101,7 @@
             <div class="projects-grid">
                 <div class="myproject">
                     <a class="project" href="https://mahmoudaliaboelhassan.github.io/Login-Form-With-LocalStorage/" target="_blank">
-                        <img src="imgs/login.jpg" alt="" class="project-image" />
+                        <img src="imgs/login.jpg" alt="login-form" class="project-image" loading="lazy">
                     </a>
                     <p class="project-title">
                         <span class="cod"> &lt;</span>Login Form
@@ -126,7 +110,7 @@
                 </div>
                 <div class="myproject">
                     <a class="project" href="https://mahmoudaliaboelhassan.github.io/Leon-template/" target="_blank">
-                        <img src="imgs/tem.jpg" alt="" class="project-image" />
+                        <img src="imgs/tem.jpg" alt="leon-template" class="project-image" loading="lazy">
                     </a>
                     <p class="project-title">
                         <span class="cod"> &lt;</span> Leon Template
@@ -135,7 +119,7 @@
                 </div>
                 <div class="myproject">
                     <a class="project" href="https://mahmoudaliaboelhassan.github.io/Tasks-List/" target="_blank">
-                        <img src="imgs/To Do List.jpg" alt="" class="project-image" />
+                        <img src="imgs/To-Do-List.jpg" alt="to-do-list" class="project-image" loading="lazy">
                     </a>
                     <p class="project-title">
                         <span class="cod"> &lt;</span>To Do List
@@ -144,7 +128,7 @@
                 </div>
                 <div class="myproject">
                     <a class="project" href="https://mahmoudaliaboelhassan.github.io/profile-card-component-main/" target="_blank">
-                        <img src="imgs/Screenshot 2023-02-01 221441.jpg" alt="" class="project-image" />
+                        <img src="imgs/Screenshot-2023-02-01-221441.jpg" alt="profile-card-component" class="project-image" loading="lazy">
                     </a>
                     <p class="project-title">
                         <span class="cod"> &lt;</span> Portfolio Card
@@ -153,7 +137,7 @@
                 </div>
                 <div class="myproject">
                     <a class="project" href="https://mahmoudaliaboelhassan.github.io/intro-section-with-dropdown-navigation/" target="_blank">
-                        <img src="imgs/desktop-design.jpg" alt="" class="project-image" />
+                        <img src="imgs/desktop-design.jpg" alt="intro-section" class="project-image" loading="lazy">
                     </a>
                     <p class="project-title">
                         <span class="cod"> &lt;</span>
@@ -163,7 +147,7 @@
                 </div>
                 <div class="myproject">
                     <a class="project" href="https://mahmoudaliaboelhassan.github.io/Bondi-Design/" target="_blank">
-                        <img src="imgs/Bondi-Design.jpg" alt="" class="project-image" />
+                        <img src="imgs/Bondi-Design.jpg" alt="bondi-design" class="project-image" loading="lazy">
                     </a>
                     <p class="project-title">
                         <span class="cod"> &lt;</span>
@@ -178,7 +162,7 @@
             </a>
         </div>
     </section>
-    <div class="contacts">
+    <section class="contacts" id="contacts">
         <h1>Let's work together...</h1>
         <p>How do you take your coffee?</p>
         <div class="links">
@@ -198,7 +182,7 @@
                 <i class="fas fa-mobile-alt"></i>Call me
             </a>
         </div>
-    </div>
+    </section>
     <div class="footer">
         <div class="date"></div>
     </div>
