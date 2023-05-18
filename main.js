@@ -6,6 +6,7 @@ let sections = document.querySelectorAll("section");
 let navlinks = document.querySelectorAll("nav ul li a");
 let menu = document.querySelector("#menu-icon");
 let nav = document.querySelector("nav ul");
+let progress = document.querySelectorAll(".skills-content .progress .bar span");
 element.innerHTML = `&copy;<span class="name">Mahmoud</span> ${date.getFullYear()} All Right Reserved `;
 window.onscroll = () => {
     header.classList.toggle("sticky", window.scrollY > 100);
@@ -16,6 +17,11 @@ window.onscroll = () => {
         let id = sec.getAttribute("id");
 
         if (top >= offset && top < offset + height) {
+            if (id === "skills") {
+                progress.forEach((prog) => {
+                    prog.style.position = "absolute";
+                });
+            }
             navlinks.forEach((link) => {
                 link.classList.remove("active");
                 console.log(link);
