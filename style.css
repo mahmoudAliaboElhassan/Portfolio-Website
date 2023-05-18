@@ -374,7 +374,6 @@ h1 {
 }
 
 .skills-content .progress .bar span {
-    position: absolute;
     height: calc(100% - 4px);
     border-radius: 0.6rem;
     left: 0.5px;
@@ -383,9 +382,6 @@ h1 {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     background-color: var(--mainColor);
-    -webkit-transition: 1.5s;
-    -o-transition: 1.5s;
-    transition: 1.5s;
 }
 
 .skills-content .progress:nth-child(1) .bar span {
