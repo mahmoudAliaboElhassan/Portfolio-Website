@@ -93,6 +93,7 @@ nav ul {
 a {
   text-decoration: none;
   color: #f0f0f0;
+  cursor: pointer;
 }
 
 #menu-icon {
