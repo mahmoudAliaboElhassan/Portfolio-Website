@@ -448,6 +448,9 @@ h1 {
 .skills-content .progress:nth-child(8) .bar span {
   width: 80%;
 }
+.skills-content .progress:nth-child(9) .bar span {
+  width: 75%;
+}
 
 #projects {
   background-color: #45567d;
